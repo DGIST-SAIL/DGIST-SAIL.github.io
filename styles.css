@@ -509,12 +509,11 @@ h4 {
 
 /* Contact Section */
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 50px;
     background: rgba(255, 255, 255, 0.05);
     padding: 50px;
     border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .info-item {
@@ -642,10 +641,6 @@ footer {
     .member-categories {
         grid-template-columns: 1fr;
         gap: 50px;
-    }
-
-    .contact-wrapper {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -854,4 +849,34 @@ footer {
 .member-info .email {
     color: var(--light-text);
     font-size: 0.85rem;
+}
+
+.member-info .name-en {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--light-text);
+    margin-top: 2px;
+}
+
+.member-info .research {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.member-info .github-link {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.member-info .github-link a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.member-info .github-link a:hover {
+    color: var(--primary-color);
 }
