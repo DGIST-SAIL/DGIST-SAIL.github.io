@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Robotics | Prof. Eojin Rho</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html#home" class="logo">
+                <img src="../assets/images/lab_logo.png" alt="Eojin Rho" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">PI</a>
+                <a href="../index.html#members" class="nav-link">Members</a>
+                <a href="../index.html#research" class="nav-link active">Research</a>
+                <a href="../index.html#teaching" class="nav-link">Teaching</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <h1>Soft Robotics</h1>
+            <p>Origami Grippers & Deep Learning-based Force Estimation</p>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="research-intro">
+                <div class="intro-text">
+                    <h2>Overview</h2>
+                    <p>Soft robotics offers a promising solution for handling delicate and irregular objects where
+                        traditional rigid robots fail. My research focuses on overcoming the limitations of soft
+                        grippers, such as the difficulty in estimating grip force due to material non-linearity.</p>
+                    <p>I have developed deep learning-based methods, such as <strong>OriGripNet</strong>, which estimate
+                        gripping force by combining visual data with physical parameters, eliminating the need for
+                        embedded sensors that can compromise the gripper's flexibility.</p>
+                </div>
+                <div class="intro-image">
+                    <!-- Placeholder for Soft Robotics Hero Image -->
+                    <div class="intro-media">
+                        <img src="../assets/images/soft_robotics2.png" alt="Soft Robotics"
+                            style="width: 100%; border-radius: 10px;">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Key Publications</h2>
+            <div class="paper-list">
+                <article class="paper-item">
+                    <div class="paper-content">
+                        <h3>Impact of Physical Parameters and Vision Data on Deep Learning-Based Grip Force Estimation
+                            for Fluidic Origami Soft Grippers</h3>
+                        <p class="authors"><strong>Eojin Rho</strong>, Woongbae Kim, Jungwook Mun, Sung Yol Yu, Kyu Jin
+                            Cho, Sungho Jo</p>
+                        <p class="abstract">
+                            Knowing the gripping force being applied to an object is important for improving the quality
+                            of the grip. In this paper, we present a vision-based neural network (OriGripNet) that
+                            estimates gripping force by combining RGB image data with key parameters extracted from the
+                            physical features of a soft gripper. OriGripNet showed a mean average error (MAE) of 0.0636
+                            N when tested for untrained objects.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Soft Gripper</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Force Estimation</span>
+                        </div>
+                    </div>
+                    <div class="paper-action">
+                        <a href="../assets/papers/Impact_of_Physical_Parameters_and_Vision_Data_on_Deep_Learning-Based_Grip_Force_Estimation_for_Fluidic_Origami_Soft_Grippers.pdf"
+                            class="btn secondary small" target="_blank">View Paper</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Eojin Rho. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-google-scholar"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

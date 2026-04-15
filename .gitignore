@@ -1,0 +1,6 @@
+Information/
+
+*.pptx
+
+# macOS
+.DS_Store
