@@ -761,8 +761,8 @@ footer {
 /* Members Page Styles */
 .member-categories {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 60px;
     align-items: start;
     margin-top: 40px;
 }
@@ -879,4 +879,114 @@ footer {
 
 .member-info .github-link a:hover {
     color: var(--primary-color);
+}
+
+/* ----------------------------------- */
+/* Members Album Grid CSS              */
+/* ----------------------------------- */
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.album-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+    padding: 40px 20px;
+    align-items: center;
+}
+
+.album-frame:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.album-collage {
+    position: relative;
+    width: 140px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.collage-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-sm);
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.album-frame:hover .collage-item {
+    transform: scale(1.1);
+}
+
+.collage-item:not(.overlap):not(.overlap-2) {
+    transform: translateX(-25px) translateY(10px);
+    z-index: 1;
+}
+
+.collage-item.overlap {
+    transform: translateX(25px) translateY(10px);
+    z-index: 2;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.collage-item.overlap-2 {
+    transform: translateY(-20px);
+    z-index: 3;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+}
+
+.album-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.album-title h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.icon-arrow {
+    color: var(--primary-color);
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.album-frame:hover .icon-arrow {
+    transform: translateX(5px);
 }
