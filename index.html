@@ -297,11 +297,12 @@
                                     42988, South Korea</p>
                             </div>
                         </div>
+
                         <div class="info-item">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-user-plus"></i>
                             <div>
-                                <h4>Phone</h4>
-                                <p>+82-10-9044-9450</p>
+                                <h4>Application</h4>
+                                <p><a href="https://forms.gle/W6DY2hWXRMhcrnkq7" target="_blank" style="text-decoration: underline; color: inherit;">Apply to SAIL</a></p>
                             </div>
                         </div>
                     </div>
@@ -322,6 +323,37 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Recruitment Modal -->
+    <div id="recruitModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📢 학부 연구생 및 대학원생 모집</h2>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>소프트 증강지능 연구실(SAIL)에서 함께 연구할 열정적인 학생들을 모집합니다!</p>
+                
+                <h3>📌 모집 대상</h3>
+                <ul>
+                    <li><strong>학부 연구원:</strong> 학기 중 및 방학 인턴 (전공 무관)</li>
+                    <li><strong>대학원생:</strong> 석/박사 과정 (통합과정 우대)</li>
+                </ul>
+
+                <h3>💡 우대 사항</h3>
+                <p>연구에 대한 열정, 새로운 문제에 꾸준히 몰입할 수 있는 태도</p>
+
+                <h3>🔬 연구 분야</h3>
+                <p>Soft Robotics, Wearable Robotics, Embodied Intelligence, Bio-Medical AI</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://forms.gle/W6DY2hWXRMhcrnkq7" class="btn primary" target="_blank" id="applyLink">지원하기 (구글 설문)</a>
+                <label class="modal-dismiss">
+                    <input type="checkbox" id="hideToday"> 오늘 하루 보지 않기
+                </label>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -48,4 +48,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Recruitment Modal Logic
+    const modal = document.getElementById('recruitModal');
+    if (modal) {
+        const closeModalBtn = document.getElementById('closeModal');
+        const hideTodayCheckbox = document.getElementById('hideToday');
+        
+        // Check local storage for hidden state
+        const hideModalDate = localStorage.getItem('hideRecruitModalDate');
+        const today = new Date().toDateString();
+
+        if (hideModalDate !== today) {
+            // Show modal with a slight delay for better UX
+            setTimeout(() => {
+                modal.classList.add('active');
+            }, 500);
+        }
+
+        // Close modal function
+        const closeModal = () => {
+            modal.classList.remove('active');
+            if (hideTodayCheckbox.checked) {
+                localStorage.setItem('hideRecruitModalDate', new Date().toDateString());
+            }
+        };
+
+        // Event listeners
+        closeModalBtn.addEventListener('click', closeModal);
+        
+        // Close when clicking outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
 });
