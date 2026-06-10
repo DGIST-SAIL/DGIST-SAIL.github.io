@@ -999,6 +999,11 @@ footer {
     max-width: 900px;
 }
 
+.news-preview {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .news-year {
     margin-bottom: 60px;
 }
