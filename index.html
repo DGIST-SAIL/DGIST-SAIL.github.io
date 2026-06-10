@@ -28,11 +28,11 @@
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">PI</a>
                 <a href="#members" class="nav-link">Members</a>
-                <a href="joining.html" class="nav-link">Join</a>
+                <a href="#join" class="nav-link">Join</a>
                 <a href="#research" class="nav-link">Research</a>
-                <a href="grants.html" class="nav-link">Grants</a>
-                <a href="news.html" class="nav-link">News</a>
-                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="#grants" class="nav-link">Grants</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#resources" class="nav-link">Resources</a>
                 <a href="#teaching" class="nav-link">Teaching</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -331,6 +331,52 @@
             </div>
         </section>
 
+        <!-- Resources Section -->
+        <section id="resources" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Resources</h2>
+                <p class="section-desc">Photos and videos from our research activities.</p>
+                <div class="resources-marquee">
+                    <div class="marquee-track">
+                        <a href="resources.html" class="marquee-item">
+                            <img src="assets/images/wearable_robotics2.png" alt="Wearable Robotics research">
+                        </a>
+                        <a href="resources.html" class="marquee-item">
+                            <img src="assets/images/soft_robotics2.png" alt="Soft Robotics research">
+                        </a>
+                        <a href="resources.html" class="marquee-item">
+                            <img src="assets/images/embodied_intelligence.jpg" alt="Embodied Intelligence research">
+                        </a>
+                        <a href="resources.html" class="marquee-item">
+                            <img src="assets/images/biomedical.jpg" alt="Bio-Medical research">
+                        </a>
+                        <a href="resources.html" class="marquee-item">
+                            <img src="assets/images/main.png" alt="Research overview">
+                        </a>
+                        <!-- Duplicate set for seamless loop -->
+                        <a href="resources.html" class="marquee-item" aria-hidden="true">
+                            <img src="assets/images/wearable_robotics2.png" alt="">
+                        </a>
+                        <a href="resources.html" class="marquee-item" aria-hidden="true">
+                            <img src="assets/images/soft_robotics2.png" alt="">
+                        </a>
+                        <a href="resources.html" class="marquee-item" aria-hidden="true">
+                            <img src="assets/images/embodied_intelligence.jpg" alt="">
+                        </a>
+                        <a href="resources.html" class="marquee-item" aria-hidden="true">
+                            <img src="assets/images/biomedical.jpg" alt="">
+                        </a>
+                        <a href="resources.html" class="marquee-item" aria-hidden="true">
+                            <img src="assets/images/main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="view-more-container" style="text-align: center; margin-top: 40px;">
+                    <a href="resources.html" class="btn secondary">View More</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Teaching Section -->
         <section id="teaching" class="section">
             <div class="container">
@@ -360,10 +406,29 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section (with embedded Join CTA) -->
         <section id="contact" class="section bg-dark">
             <div class="container">
                 <h2 class="section-title text-light">Get in Touch</h2>
+
+                <!-- Join CTA banner -->
+                <div id="join" class="join-cta-banner">
+                    <div class="join-cta-text">
+                        <h3>Looking to join SAIL?</h3>
+                        <p>We're recruiting motivated students at all levels &mdash; undergraduate to Ph.D.
+                            Take a few minutes to share your background.</p>
+                    </div>
+                    <div class="join-cta-actions">
+                        <a href="joining.html" class="btn primary">
+                            <i class="fas fa-book-open"></i> Joining Guide
+                        </a>
+                        <a href="https://forms.gle/W6DY2hWXRMhcrnkq7" target="_blank" rel="noopener noreferrer" class="btn secondary on-dark">
+                            <i class="fas fa-paper-plane"></i> Apply Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact info -->
                 <div class="contact-wrapper">
                     <div class="contact-info">
                         <div class="info-item">
@@ -379,14 +444,6 @@
                                 <h4>Location</h4>
                                 <p>Room 409, Building E5,<br>DGIST, 333 Techno Jungang-daero,<br>Dalseong-gun, Daegu,
                                     42988, South Korea</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <i class="fas fa-user-plus"></i>
-                            <div>
-                                <h4>Application</h4>
-                                <p><a href="https://forms.gle/W6DY2hWXRMhcrnkq7" target="_blank" style="text-decoration: underline; color: inherit;">Apply to SAIL</a></p>
                             </div>
                         </div>
                     </div>

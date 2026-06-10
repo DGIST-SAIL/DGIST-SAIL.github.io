@@ -1004,6 +1004,122 @@ footer {
     margin: 0 auto;
 }
 
+/* ===== Resources Marquee (Homepage) ===== */
+.resources-marquee {
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    padding: 10px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+}
+
+.resources-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-item {
+    flex-shrink: 0;
+    width: 340px;
+    height: 220px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    background: var(--white);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marquee-item:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.marquee-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+/* ===== Join CTA inside Contact section ===== */
+.join-cta-banner {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.15) 0%, rgba(59, 130, 246, 0.25) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 28px;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.join-cta-text h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.join-cta-text p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.join-cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.join-cta-actions .btn i {
+    margin-right: 6px;
+}
+
+.btn.secondary.on-dark {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn.secondary.on-dark:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+    border-color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .marquee-item {
+        width: 260px;
+        height: 170px;
+    }
+
+    .join-cta-banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 28px 24px;
+    }
+
+    .join-cta-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .news-year {
     margin-bottom: 60px;
 }
