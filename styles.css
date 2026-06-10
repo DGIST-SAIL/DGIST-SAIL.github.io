@@ -1157,6 +1157,24 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Cards with actual image use vertical layout (banner on top) */
+.grant-card-has-image {
+    display: block;
+}
+
+.grant-card-has-image .grant-image {
+    width: 100%;
+    min-height: auto;
+    background: var(--bg-light);
+    padding: 0;
+}
+
+.grant-card-has-image .grant-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .grant-image {
     min-height: 180px;
     display: flex;
@@ -1204,6 +1222,10 @@ footer {
 
 .grant-content {
     padding: 28px 30px 28px 0;
+}
+
+.grant-card-has-image .grant-content {
+    padding: 24px 30px 28px;
 }
 
 .grant-badges {
