@@ -870,6 +870,8 @@ footer {
 .member-info .email {
     color: var(--light-text);
     font-size: 0.85rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .member-info .name-en {
