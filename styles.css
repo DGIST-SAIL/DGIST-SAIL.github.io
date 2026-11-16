@@ -492,12 +492,15 @@ h4 {
 
 .course-header {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
 .semester {
+    white-space: nowrap;
     background: var(--white);
     padding: 5px 15px;
     border-radius: 20px;
@@ -1305,7 +1308,7 @@ footer {
 
 .album-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
@@ -1389,8 +1392,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 6%;
 }
 
 .album-title h3 {
@@ -2126,5 +2130,14 @@ footer {
 
     .grant-content {
         padding: 24px;
+    }
+}
+
+/* Responsive overrides placed after the base rules so they take effect */
+@media (max-width: 768px) {
+    .album-grid,
+    .grants-preview,
+    .collaborator-grid {
+        grid-template-columns: 1fr;
     }
 }

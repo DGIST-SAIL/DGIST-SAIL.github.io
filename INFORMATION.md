@@ -4,7 +4,7 @@
 **Name:** Eojin Rho
 **Title:** Assistant Professor @ DGIST
 **Affiliation:** DGIST (Daegu Gyeongbuk Institute of Science and Technology)
-**Previous:** Postdoctoral Researcher, Seoul National University
+**Previous:** Assistant Professor, Myongji University (2025.09–2026.01); Postdoctoral Researcher, Seoul National University (2024.03–2025.08)
 
 **Short Bio:**
 Eojin Rho is an Assistant Professor at DGIST, specializing in Soft Robotics, Deep Learning, and Human-Robot Interaction. He is deeply interested in developing wearable robotic technologies that enhance human functional movement and support rehabilitation. His work bridges the gap between physical intelligence and computational power to create seamless human-robot collaboration.
@@ -47,13 +47,15 @@ Looking ahead, I believe we are entering an era in which humans will collaborate
 3.  **Critical Thinking**: Encouraging students to question and innovate."
 
 **Courses:**
-1.  **[Undergraduate] Introduction to Python Programming**:
-    *   Covers fundamentals of Python programming, including data structures, algorithms, and software development practices.
+1.  **[Undergraduate · CSE302] Introduction to Machine Learning**:
+    *   An introduction to widely used machine learning algorithms: supervised and unsupervised learning, neural networks, sequential models, and reinforcement learning.
 
-2.  **[Undergraduate] Introduction to Machine Learning**:
-    *   Fundamentals of machine learning algorithms, deep learning, and data analysis for real-world applications.
+2.  **[Graduate · RT760] Machine Learning**:
+    *   A comprehensive graduate-level introduction to machine learning, covering regression, classification, clustering, dimensionality reduction, ensemble methods, neural networks, and sequential models, with an emphasis on applying ML to each student's own research.
+
+3.  **[Undergraduate · MECH205] Introduction to Biomedical Engineering**:
+    *   An introduction to biomedical engineering, team-taught by four faculty members. Prof. Rho leads the wearable robotics module, which covers soft robotic gloves for hand rehabilitation, learning-based control, full-body exoskeletons, and human biomechanics.
 
 ## 4. Contact
 **Email:** djwls9453@dgist.ac.kr
-**Phone:** +82-10-9044-9450
 **Location:** Room 409, Building E5, DGIST, 333 Techno Jungang-daero, Dalseong-gun, Daegu, 42988, South Korea
