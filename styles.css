@@ -1625,10 +1625,6 @@ footer {
     background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
 }
 
-.grant-bg-regional {
-    background: linear-gradient(135deg, #ea580c 0%, #9a3412 100%);
-}
-
 .grant-content {
     padding: 28px 30px 28px 0;
 }
